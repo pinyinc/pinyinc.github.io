@@ -48,6 +48,7 @@ function pinyin(input) {
 
 function convert(sentence) {
     var result = [];
+    sentence = sentence.replace(/\n/g, " \n");
     words = sentence.split(' ');
     for (var i = 0; i < words.length; i++)
         result.push(pinyin(words[i], ''))
