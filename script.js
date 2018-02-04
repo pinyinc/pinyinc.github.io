@@ -40,7 +40,7 @@ function pinyin(input) {
     else 
         vowel_to_change = '';
 
-    new_word = '';
+    new_word = input;
     if (vowel_to_change)
         new_word = word.replace(vowel_to_change, vowels[vowel_to_change][tone]);
     return new_word + punctuation;
