@@ -3,13 +3,15 @@
 <head>
     <title>PinYin Converter</title>
 </head>
-<body>
+<body style="overflow:scroll">
     <h1>PinYin Converter</h1>
-    <textarea id="input" rows="40" cols="80" oninput="trigger()" 
-        style="resize:none" placeholder="Try: ni2 hao3!" autofocus></textarea>
+    <textarea id="input" rows="30" cols="60" oninput="trigger()" 
+        style="resize:none; font-size:10pt; padding: 20px; margin-left: 20px;" 
+        placeholder="Try: ni2 hao3!" autofocus></textarea>
 
-    <textarea id="output" rows="40" cols="80" readonly=readonly
-                                    style="resize:none" placeholder="nǐ hǎo!"></textarea>
+    <textarea id="output" rows="30" cols="60" readonly=readonly
+        style="resize:none; font-size:10pt; padding: 20px; margin-right: 20px;" 
+        placeholder="nǐ hǎo!"></textarea>
 
 </body>
 <script src="script.js"></script>
